@@ -11,6 +11,9 @@ router.get("/realtimeproducts", async (req, res) => {
     res.render("realtimeproducts");
 })
 
+router.get("/", async (req, res) => {
+    res.render("home", {});
+})
 
 router.get("/products", async (req, res) => {
     try {
